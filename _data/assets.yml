@@ -1,0 +1,11 @@
+- name: Enclosure for 2x2 FeatherWing 
+  scad: quadbox.scad
+  stl: gen/quadbox.stl
+  images: ['gen/quadbox.png', 'quadbox-450.jpg']
+
+- name: Short Enclosure for 2x2 FeatherWing 
+  notes: "Untested design, 22mm height, intended for two layers of board."
+  scad: quadbox.scad
+  flags: -Dheight=22
+  stl: gen/quadbox-22.stl
+  images: ['gen/quadbox-22.png']
