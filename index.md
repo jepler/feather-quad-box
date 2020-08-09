@@ -7,10 +7,12 @@ FeatherWing](https://www.adafruit.com/product/4253).
 It is designed to accomodate a stack of 3 boards with regular height headers,
 but you can easily change the height by editing the OpenSCAD file and regenerating it.
 
-For my clock design, I placed displays in front, the Quad in the middle, and
-Feather and RTC FeatherWing in back.
+For my clock design, I placed [4 displays in
+front](https://www.adafruit.com/product/2965), the Quad in the middle, [a
+Feather M4 Experss](https://www.adafruit.com/product/3857) and [precision RTC
+FeatherWing](https://www.adafruit.com/product/3028) in back.
 
-You'll need a whole pile of M2.5 screws (5mm are good) and 12mm spacers
+You'll need a whole pile of [M2.5 screws (5mm are good) and 12mm spacers](https://www.adafruit.com/product/3299)
 to put it together.
 
 {% for asset in site.data.assets %}
