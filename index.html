@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Enclosure for Feather Quad">
+  <meta name="author" content="Jeff Epler">
+  
+  
+  
+  <link href='http://fonts.googleapis.com/css?family=Arvo:400,700|PT+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
+  <link href="resources/css/bootstrap.min.css" rel="stylesheet">
+  <link href="resources/css/style.css" rel="stylesheet">
+  <link href="resources/css/lightbox.css" rel="stylesheet">
+  <script src="resources/js/three.min.js"></script>
+  <script src="resources/js/STLLoader.js"></script>
+  <script src="resources/js/OrbitControls.js"></script>
+  <script src="resources/js/stlviewer.js"></script>
+  <script src="resources/js/lightbox.js"></script>
+  <title>Feather Quad 2x2 Enclosure</title>
+  
+ </head>
+ <body>
+  <div class="wrapper">
+   <div id="header">
+    <div class="container">
+    
+     <h1>Feather Quad 2x2 Enclosure</h1>
+    
+    </div>
+   </div>
+   
+   <div id="content">
+    <div class="container">
+      <p>This is an enclosure for the <a href="https://www.adafruit.com/product/4253">Adafruit Quad 2x2
+FeatherWing</a>.
+It is designed to accomodate a stack of 3 boards with regular height headers,
+but you can easily change the height by editing the OpenSCAD file and regenerating it.</p>
+
+<h3 id="enclosure-for-2x2-featherwing">Enclosure for 2x2 FeatherWing</h3>
+
+<html>
+
+
+
+<img src="resources/gen/quadbox.png" title="Enclosure for 2x2 FeatherWing" data-stl="resources/gen/quadbox.stl" />
+
+
+
+
+<img src="resources/quadbox-450.jpg" title="Enclosure for 2x2 FeatherWing" />
+
+
+</html>
+
+<h3 id="short-enclosure-for-2x2-featherwing">Short Enclosure for 2x2 FeatherWing</h3>
+
+<html>
+
+
+
+<img src="resources/gen/quadbox-22.png" title="Short Enclosure for 2x2 FeatherWing" data-stl="resources/gen/quadbox-22.stl" />
+
+
+</html>
+
+<h2 id="print-settings">Print Settings</h2>
+<p>Designed for 0.4mm extrusion width.  Overall, this is a very forgiving print.
+However, a manually added support under the opening for the USB plug won’t hurt.</p>
+
+<h2 id="parts-i-used-in-my-clock">Parts I used in my clock</h2>
+<p>For my clock design, I placed <a href="https://www.adafruit.com/product/2965">4 displays in
+front</a>, the Quad in the middle, <a href="https://www.adafruit.com/product/3857">a
+Feather M4 Experss</a> and <a href="https://www.adafruit.com/product/3028">precision RTC
+FeatherWing</a> in back.  I also put a
+<a href="https://www.adafruit.com/product/3898">small lipo battery</a> inside so the
+display would continue to run during short power outages.  Then I used a whole
+pile of <a href="https://www.adafruit.com/product/3299">M2.5 screws (5mm are good) and 12mm
+spacers</a> to put it together.</p>
+
+<p>While I haven’t put the clock code online, there’s a series on my personal blog
+about some of the surrounding work that went into it:</p>
+<ul>
+  <li><a href="https://emergent.unpythonic.net/01595078470">Quad CharliePlex FeatherWing hack</a></li>
+  <li><a href="https://emergent.unpythonic.net/01595021837">Minimal Time-Zone Handling for CircuitPython</a></li>
+  <li><a href="https://emergent.unpythonic.net/01594923755">Calibrating the DS3231 and PFC8523 RTCs</a></li>
+  <li><a href="https://emergent.unpythonic.net/01594912346">Helpful scripts for CircuitPython &amp; Real Time Clocks (RTCs)</a></li>
+</ul>
+
+<h2 id="downloads">Downloads</h2>
+
+<h3 id="enclosure-for-2x2-featherwing-1">Enclosure for 2x2 FeatherWing:</h3>
+
+<ul>
+  <li>
+    <p><a href="resources/quadbox.scad">quadbox.scad</a></p>
+  </li>
+  <li>
+    <p><a href="resources/gen/quadbox.stl">quadbox.stl</a></p>
+  </li>
+</ul>
+
+<h3 id="short-enclosure-for-2x2-featherwing-1">Short Enclosure for 2x2 FeatherWing:</h3>
+
+<p>Untested design, 22mm height, intended for two layers of board.</p>
+
+<p>STL generated with <code class="highlighter-rouge">-Dheight=22</code></p>
+
+<ul>
+  <li>
+    <p><a href="resources/quadbox.scad">quadbox.scad</a></p>
+  </li>
+  <li>
+    <p><a href="resources/gen/quadbox-22.stl">quadbox-22.stl</a></p>
+  </li>
+</ul>
+
+
+    </div>
+   </div>
+   
+  </div>
+  <hr>
+  <div id="footer">
+   <div class="container">
+    <p>
+    
+    This 3D printable project is offered under <a href="LICENSE.html">an open source license</a>.
+
+    The source is managed at <a href="https://github.com/jepler/feather-quad-box">https://github.com/jepler/feather-quad-box</a>.
+
+    The site is built with software under <a href="other-licenses.html">various open source licenses</a>.
+    
+    Create your own MySTL site with <a href="https://github.com/jepler/cookiecutter-mystl">cookiecutter-mystl</a>.
+
+    </p>
+    <a class="pull-right" href="#">Back to top</a>
+   </div>
+  </div>
+ </body>
+</html>
