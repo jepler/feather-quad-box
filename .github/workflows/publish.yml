@@ -18,6 +18,7 @@ jobs:
       run: |
         apt-get update
         apt-get --no-install-recommends -y install admesh git imagemagick jekyll make openscad python3 python3-yaml xauth xvfb
+        env BUNDLE_SILENCE_ROOT_WARNING=true bundle update --bundler
     - name: checkout
       uses: actions/checkout@v2
     - name: build
