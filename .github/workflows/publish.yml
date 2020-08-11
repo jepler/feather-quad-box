@@ -18,6 +18,7 @@ jobs:
       run: |
         apt-get update
         apt-get --no-install-recommends -y install admesh git imagemagick jekyll make openscad python3 python3-yaml xauth xvfb
+        bundle install
     - name: checkout
       uses: actions/checkout@v2
     - name: build
@@ -25,7 +26,7 @@ jobs:
         set -xe
         echo "sourceurl: https://github.com/$GITHUB_REPOSITORY" >> _config.yml
         cat _config.yml
-        env JEKYLL_ENV=production xvfb-run make V=2 -O -j$(nproc) jekyll
+        env JEKYLL_ENV=production bundle exec xvfb-run make V=2 -O -j$(nproc) jekyll
     - if: github.event_name == 'push' && github.ref == 'refs/heads/main'
       name: publish
       run: |

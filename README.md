@@ -35,10 +35,14 @@ It can optionally have notes, an scad file, scad generation flags, images, and o
 You can refer to a source scad file multiple times with different flags,
 in order to generate related or parametric models.
 
+## One time setup for Jekyll
+
+    $ bundle install
+
 ## Build assets and render Locally
 
     $ make
-    $ jekyll serve --watch
+    $ bundle exec jekyll serve --watch
 
 ## Build locally and push site to github pages
 
