@@ -17,7 +17,7 @@ jobs:
     - name: install dependencies
       run: |
         apt-get update
-        apt-get --no-install-recommends -y install admesh git imagemagick ruby-bundler jekyll make openscad python3 python3-yaml xauth xvfb
+        apt-get --no-install-recommends -y install admesh git imagemagick ruby-bundler jekyll make openscad python3 python3-yaml xauth xvfb build-essential ruby-dev
     - name: checkout
       uses: actions/checkout@v2
     - name: build
