@@ -26,7 +26,6 @@ jobs:
         set -xe
         echo "sourceurl: https://github.com/$GITHUB_REPOSITORY" >> _config.yml
         cat _config.yml
-        env BUNDLE_SILENCE_ROOT_WARNING=true JEKYLL_ENV=production bundle exec xvfb-run make V=2 -O -j$(nproc) jekyll
     - if: github.event_name == 'push' && github.ref == 'refs/heads/main'
       name: publish
       run: |
@@ -34,6 +33,7 @@ jobs:
         git config user.name "${GITHUB_ACTOR}"
         git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
         git remote set-url --push origin https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+        env BUNDLE_SILENCE_ROOT_WARNING=true JEKYLL_ENV=production bundle exec xvfb-run make V=2 -O -j$(nproc) jekyll
         make -O V=1 publish
 
     - if: github.event_name != 'push' || github.ref != 'refs/heads/main'
